@@ -109,7 +109,7 @@ data "aws_iam_policy_document" "my_policy" {
 }
 
 resource "aws_route53_record" "primary_record" {
-  zone_id = "Z00651972D5VIEQ337ZPG" 
+  zone_id = var.zone-id 
   name    = "terraform.slhttnunlu.net"
   type    = "A" 
   ttl     = "60" 
@@ -124,7 +124,7 @@ resource "aws_route53_record" "primary_record" {
 }
 
 resource "aws_route53_record" "secondary_record" {
-  zone_id = "Z00651972D5VIEQ337ZPG" 
+  zone_id = var.zone-id 
   name    = "terraform.slhttnunlu.net" 
   type    = "A" 
   #ttl     = "60"

@@ -22,5 +22,9 @@ variable "server-name" {
   type = string
   default = "apache-instance"
 }
+variable "zone-id" {
+  type = string
+  default = "your zone id"
+}
 
 
