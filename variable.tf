@@ -5,12 +5,12 @@ variable "instance_type" {
 
 variable "key_name" {
   type = string
-  default = "mackeypair"
+  default = "mykeyname"
 }
 
 variable "tag" {
   type = string
-  default = "nginx-Instance"
+  default = "apache-Instance"
 }
 
 variable "s3_bucket_name" {
@@ -20,6 +20,7 @@ variable "s3_bucket_name" {
 
 variable "server-name" {
   type = string
-  default = "nginx-instance"
+  default = "apache-instance"
 }
+
 
